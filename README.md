@@ -6,7 +6,6 @@ This is another simple space game where you control a spacecraft and dodge aster
 
 It is made with Unity and C# and can be played on Android, Windows or Web. The latest version is currently built only for Android and Web. 
 To play on Windows or Android simply open "Space Action.exe" or "StarFlight.apk" file.
-
 On Android you can turn either by tapping or by using accelerometer. 
 
 To run in web browser you may need to open "index.html" in folder "WebBuild" in Chrome with disabled web security
