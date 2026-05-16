@@ -1,3 +1,5 @@
+# Star Flight
+
 This is another simple space game where you control a spacecraft and dodge asteroids.
 
 It is made with Unity and C# and can be played on Android, Windows or Web. The latest version is currently built only for Android and Web. 
