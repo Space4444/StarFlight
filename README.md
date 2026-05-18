@@ -1,6 +1,6 @@
 # Star Flight
 
-This is another simple space game where you control a spacecraft and dodge asteroids.
+This is simple space game where you control a spacecraft and dodge asteroids.
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c871b1d0-6f03-43c9-94e2-267ff886ddbd" />
 
