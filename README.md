@@ -2,6 +2,8 @@
 
 This is simple space game where you control a spacecraft and dodge asteroids.
 
+[Web demo](https://space4444.github.io/StarFlight)
+
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c871b1d0-6f03-43c9-94e2-267ff886ddbd" />
 
 It is made with Unity and C# and can be played on Android, Windows or Web. The latest version is currently built only for Android and Web. 
