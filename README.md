@@ -10,6 +10,12 @@ The latest version is currently built only for Android and Web
 
 ## [Web demo](https://space4444.github.io/StarFlight)
 
+## Features
+- Controlling with accelerometer
+
+## Tech stack
+- [Unity](https://unity.com/)
+
 ## Overview
 
 Fly through endless space, collect energy and dodge asteroids. In the settings you can choose whether the camera will rotate following the player or not.
