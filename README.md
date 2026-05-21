@@ -26,3 +26,7 @@ On Android the movement direction is controlled either by tapping on screen or b
 To play on Windows or Android open "Space Action.exe" or "StarFlight.apk" file. 
 
 To run in web browser follow the [link](https://space4444.github.io/StarFlight)
+
+## License
+
+[MIT](LICENSE) © Space4444
