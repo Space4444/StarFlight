@@ -37,7 +37,7 @@ public class ShipScript : MonoBehaviour {
         if (PlayerPrefs.HasKey("Record"))
         {
             record = PlayerPrefs.GetInt("Record");
-            interfaceScript.transform.FindChild("Text (1)").GetComponent<Text>().text = "record: " + record.ToString();
+            interfaceScript.transform.Find("Text (1)").GetComponent<Text>().text = "record: " + record.ToString();
         }
         else
             record = 0;
@@ -74,7 +74,7 @@ public class ShipScript : MonoBehaviour {
             {
                 record = (int)score;
                 if (score >= record) PlayerPrefs.SetInt("Record", record);
-                interfaceScript.transform.FindChild("Text (1)").GetComponent<Text>().text = "record: " + record.ToString();
+                interfaceScript.transform.Find("Text (1)").GetComponent<Text>().text = "record: " + record.ToString();
             }
             if (health <= 0)
             {
@@ -94,7 +94,7 @@ public class ShipScript : MonoBehaviour {
 				score += sp*1000*speed;
                 speed = 5f - (0.5f-startSpeed*0.1f) / (sp + 0.1f);
                 rotSpeed = 4f + speed * 4f;
-                interfaceScript.transform.FindChild("Text").GetComponent<Text>().text = "score: " + ((int)score).ToString();
+                interfaceScript.transform.Find("Text").GetComponent<Text>().text = "score: " + ((int)score).ToString();
                 if (!energy.activeSelf && Random.Range(0, 10) == 4)
                 {
                     energy.SetActive(true);
@@ -241,7 +241,7 @@ public class ShipScript : MonoBehaviour {
                 {
                     health--;
                     GetComponent<SpriteRenderer>().enabled = false;
-                    transform.FindChild("Particle System").GetComponent<ParticleSystem>().Stop();
+                    transform.Find("Particle System").GetComponent<ParticleSystem>().Stop();
                     Instantiate(explodion, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
                     Game.soundsSource.PlayOneShot(Game.destroyingShip);
                 }
@@ -262,7 +262,7 @@ public class ShipScript : MonoBehaviour {
         sp = 0;
         health = 10;
         score = 0;
-        transform.FindChild("Particle System").GetComponent<ParticleSystem>().Play();
+        transform.Find("Particle System").GetComponent<ParticleSystem>().Play();
         shield.transform.localScale = new Vector3(0, 0, 0);
         for (int i = 0; i < n; i++)
         {
@@ -272,7 +272,7 @@ public class ShipScript : MonoBehaviour {
     }
     public void Pause()
     {
-        transform.FindChild("Particle System").GetComponent<ParticleSystem>().Pause();
+        transform.Find("Particle System").GetComponent<ParticleSystem>().Pause();
         if (energy.activeSelf) energy.GetComponent<ParticleSystem>().Pause();
         for (int i = 0; i < n; i++)
             if (explodions[i] != null)
@@ -283,7 +283,7 @@ public class ShipScript : MonoBehaviour {
     }
     public void Play()
     {
-        transform.FindChild("Particle System").GetComponent<ParticleSystem>().Play();
+        transform.Find("Particle System").GetComponent<ParticleSystem>().Play();
         if (energy.activeSelf) energy.GetComponent<ParticleSystem>().Play();
         for (int i = 0; i < n; i++)
             if (explodions[i] != null)

@@ -3,3 +3,7 @@ obj
 .vs
 *.pdb
 Space\ Action.zip
+Logs
+Temp
+UserSettings
+*.keystore

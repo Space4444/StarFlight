@@ -6,7 +6,7 @@ public class GoToMenuScript : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (!FindObjectOfType<InterfaceScript>().transform.FindChild("Menu").gameObject.activeSelf)
+        if (!FindObjectOfType<InterfaceScript>().transform.Find("Menu").gameObject.activeSelf)
             click = true;
     }
     void OnMouseUp()
@@ -15,7 +15,7 @@ public class GoToMenuScript : MonoBehaviour {
         {
             click = false;
             FindObjectOfType<PauseScript>().Pause();
-            FindObjectOfType<InterfaceScript>().transform.FindChild("Menu").gameObject.SetActive(true);
+            FindObjectOfType<InterfaceScript>().transform.Find("Menu").gameObject.SetActive(true);
         }
     }
 }

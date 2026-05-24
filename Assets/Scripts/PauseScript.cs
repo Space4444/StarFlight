@@ -10,11 +10,11 @@ public class PauseScript : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         paused = true;
-        FindObjectOfType<ShipScript>().transform.FindChild("Particle System").GetComponent<ParticleSystem>().Pause();
+        FindObjectOfType<ShipScript>().transform.Find("Particle System").GetComponent<ParticleSystem>().Pause();
     }
 	void OnMouseDown()
     {
-		if(!FindObjectOfType<InterfaceScript>().transform.FindChild("Menu").gameObject.activeSelf)
+		if(!FindObjectOfType<InterfaceScript>().transform.Find("Menu").gameObject.activeSelf)
             click = true;
     }
     void OnMouseUp()
@@ -46,8 +46,8 @@ public class PauseScript : MonoBehaviour {
     void Update()
     {
         if(paused)
-            transform.parent.FindChild("buttons").localPosition = new Vector3(transform.parent.FindChild("buttons").localPosition.x - (transform.parent.FindChild("buttons").localPosition.x) / 10, transform.parent.FindChild("buttons").localPosition.y, 0);
+            transform.parent.Find("buttons").localPosition = new Vector3(transform.parent.Find("buttons").localPosition.x - (transform.parent.Find("buttons").localPosition.x) / 10, transform.parent.Find("buttons").localPosition.y, 0);
         else
-            transform.parent.FindChild("buttons").localPosition = new Vector3(transform.parent.FindChild("buttons").localPosition.x - (transform.parent.FindChild("buttons").localPosition.x - 111) / 10, transform.parent.FindChild("buttons").localPosition.y, 0);
+            transform.parent.Find("buttons").localPosition = new Vector3(transform.parent.Find("buttons").localPosition.x - (transform.parent.Find("buttons").localPosition.x - 111) / 10, transform.parent.Find("buttons").localPosition.y, 0);
     }
 }

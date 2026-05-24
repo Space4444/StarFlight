@@ -6,7 +6,7 @@ public class RetryScript : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (!FindObjectOfType<InterfaceScript>().transform.FindChild("Menu").gameObject.activeSelf)
+        if (!FindObjectOfType<InterfaceScript>().transform.Find("Menu").gameObject.activeSelf)
             click = true;
     }
     void OnMouseUp()

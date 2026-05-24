@@ -7,7 +7,7 @@ public class MenuScript : MonoBehaviour
     void Start()
     {
         script = FindObjectOfType<ShipScript>();
-        settings = transform.FindChild("settings page");
+        settings = transform.Find("settings page");
     }
     public void Play()
     {
@@ -22,17 +22,17 @@ public class MenuScript : MonoBehaviour
     }
     public void Credits()
     {
-        transform.FindChild("credits page").gameObject.SetActive(true);
+        transform.Find("credits page").gameObject.SetActive(true);
         Game.soundsSource.PlayOneShot(Game.menuButton);
     }
     public void Back()
     {
-        transform.FindChild("settings page").gameObject.SetActive(false);
+        transform.Find("settings page").gameObject.SetActive(false);
         Game.soundsSource.PlayOneShot(Game.menuButton);
     }
     public void Back2()
     {
-        transform.FindChild("credits page").gameObject.SetActive(false);
+        transform.Find("credits page").gameObject.SetActive(false);
         Game.soundsSource.PlayOneShot(Game.menuButton);
     }
     public void Accelerometer()
@@ -50,12 +50,12 @@ public class MenuScript : MonoBehaviour
     {
         Game.soundsSource.PlayOneShot(Game.menuButton);
         Game.musicSource.enabled = !Game.musicSource.enabled;
-        settings.FindChild("Slider").gameObject.SetActive(!settings.FindChild("Slider").gameObject.activeSelf);
+        settings.Find("Slider").gameObject.SetActive(!settings.Find("Slider").gameObject.activeSelf);
     }
     public void Sound()
     {
         Game.soundsSource.enabled = !Game.soundsSource.enabled;
-        settings.FindChild("Slider (1)").gameObject.SetActive(!settings.FindChild("Slider (1)").gameObject.activeSelf);
+        settings.Find("Slider (1)").gameObject.SetActive(!settings.Find("Slider (1)").gameObject.activeSelf);
         Game.soundsSource.PlayOneShot(Game.menuButton);
     }
     public void MusicVolume(float f)
