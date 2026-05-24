@@ -20,11 +20,7 @@ The latest version is currently built only for Android and Web
 Fly through endless space, collect energy and dodge asteroids. In the settings you can choose whether the camera will rotate following the player or not.
 On Android the movement direction is controlled either by tapping on screen or by using accelerometer.
 
-### How to play
-
-To play on Windows or Android open "Space Action.exe" or "StarFlight.apk" file. 
-
-To run in web browser follow the [link](https://space4444.github.io/StarFlight)
+You can play on web at the links above or download and install "StarFlight.apk" on Android or download "Win64Build" and open "Space Action.exe" on Windows.
 
 ## License
 
