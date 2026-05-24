@@ -10,6 +10,8 @@ The latest version is currently built only for Android and Web
 
 ## [Web demo](https://space4444.github.io/StarFlight)
 
+## [Play on UnityPlay](https://play.unity.com/en/games/0231d30d-965b-40bc-bd11-981863ae8c88/starflight)
+
 ## Features
 - Controlling with accelerometer
 
